@@ -1,0 +1,26 @@
+subprojects {
+    repositories {
+        mavenCentral()
+
+        maven {
+            name 'Paper Repository'
+            url 'https://papermc.io/repo/repository/maven-public/'
+        }
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+
+    dependencies {
+        compileOnly group: 'io.papermc.paper', name: 'paper-api', version: '1.18.1-R0.1-SNAPSHOT'
+    }
+
+    group = 'gg.packetloss'
+    version = '1.0'
+}

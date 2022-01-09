@@ -1,0 +1,5 @@
+rootProject.name = 'PLG World Gen'
+
+include 'plg-barrier-gen'
+include 'plg-city-gen'
+include 'plg-void-gen'

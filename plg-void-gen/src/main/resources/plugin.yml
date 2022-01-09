@@ -1,0 +1,5 @@
+name: PLGVoidGen
+version: 1.0
+main: gg.packetloss.worldgen.voidgen.PLGVoidGeneratorPlugin
+load: STARTUP
+api-version: 1.18
